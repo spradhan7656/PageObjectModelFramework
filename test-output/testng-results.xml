@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-19T11:19:49 IST" name="Default suite" finished-at="2023-11-19T11:21:09 IST" duration-ms="80356">
+    <groups>
+    </groups>
+    <test started-at="2023-11-19T11:19:49 IST" name="Default test" finished-at="2023-11-19T11:21:09 IST" duration-ms="80356">
+      <class name="com.mytest.tests.LoginTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-11-19T11:19:49 IST" name="beforeSuite" finished-at="2023-11-19T11:19:49 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-11-19T11:19:49 IST" name="beforeMethod" finished-at="2023-11-19T11:20:13 IST" duration-ms="24208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestWithValidCredentials()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-11-19T11:20:13 IST" name="loginTestWithValidCredentials" finished-at="2023-11-19T11:21:06 IST" duration-ms="53225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestWithValidCredentials -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-11-19T11:21:06 IST" name="afterMethod" finished-at="2023-11-19T11:21:09 IST" duration-ms="2865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-11-19T11:21:10 IST" name="afterSuite" finished-at="2023-11-19T11:21:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.mytest.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 /*
@@ -19,47 +20,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CommonUtils 
 {
-	public Properties configData;
-	public WebDriver driver;
-	/*
-	 * <p> This method read the config and parses the same into key value pairs </p>
-	 */
-	public void readConfig()
+	 
+	public WebDriver driver;// web driver object
+	
+	public CommonUtils(WebDriver driver)
 	{
-		
-		try {
-
-			FileInputStream fis = new FileInputStream(new File ("./src/test/resources/config.properties"));
-			
-			configData =new Properties();
-			
-			configData.load(fis);
-			
-			System.out.println(configData.getProperty("browser.name"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-		
-			System.out.println("Unable to Read Config"+e.getMessage());
-		}
+		this.driver=driver;
 	}
+	
 	
 	/*
 	 * <p> This method is use to lunch the browser</p>
 	 */
-	public void lunchBrowser()
-	{
-		if(configData.getProperty("browser.name").equalsIgnoreCase("chrome"))
-		{
-			System.setProperty("webDriver.chrome.driver",configData.getProperty("browser.executable"));
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			
-		}
-		else
-		{
-			//implement of other block
-		}
-	}
+	
 	/*
 	 * <p> This method is use to quit the browser</p>
 	 */
@@ -67,10 +40,23 @@ public class CommonUtils
 	{
 		driver.quit();
 	}
-	public static void main(String[] args) {
-		CommonUtils comm =new CommonUtils();
-		comm.readConfig();
-		comm.lunchBrowser();
-		comm.closeBrowser();
+	public void navigate(String url)
+	{
+		driver.get(url);
 	}
+	/*
+	 * <p>Click on the element by provider</p>
+	 */
+	public void clickElement(By locatorType)
+	{
+		driver.findElement(locatorType).click();
+	}
+	/*
+	 * <p>Sendkeys to provide element
+	 */
+	public void  type(By locatorType ,String value)
+	{
+		driver.findElement(locatorType).sendKeys(value);
+	}
+	
 }
