@@ -11,9 +11,9 @@ public class LoginTest extends Hooks
 	public void loginTestWithValidCredentials() throws InterruptedException
 	{
 		LoginPage page=new LoginPage(driver);
-		Thread.sleep(4000);
-		page.loginIntoApp("mngr535530", "pEsEraq","https://demo.guru99.com/v2/");
-		Thread.sleep(4000);
+		
+		page.loginIntoApp("mngr541042", "zygyryb","https://demo.guru99.com/v2/");
+		
 	}
 
 }

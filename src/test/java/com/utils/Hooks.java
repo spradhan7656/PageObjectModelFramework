@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeSuite;
 public class Hooks 
 {
 	public WebDriver driver;// web driver object
-	public Properties configData;// this is access the config file data
+	public static Properties configData;// this is access the config file data
 	@BeforeSuite
 	public void beforeSuite()
 	{
