@@ -2,18 +2,20 @@ package com.mytest.testlisteners;
 
 import java.io.File;
 
-
+import java.util.Date;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.utils.CommonUtils;
 import com.utils.Hooks;
 
 public class TestEventListner implements ITestListener
 {
 
-	public void onTestStart(ITestResult result) {
+	
+	public void onTestStart(ITestResult result) { 
 		
 	}
 
@@ -23,7 +25,7 @@ public class TestEventListner implements ITestListener
 
 	public void onTestFailure(ITestResult result) 
 	{
-		
+		CommonUtils.captureScreenshot();
 		
 	}
 
@@ -46,11 +48,14 @@ public class TestEventListner implements ITestListener
 	public void onFinish(ITestContext context) {
 		
 	}
-	
+	/*
+	 *
+	 */
 	public static void main(String[] args) 
 	{
 		
-		
+		Date date = new Date();
+		System.out.println(date.toString().replace(" ", "_").replace(":", "_"));
 	}
 	
 }

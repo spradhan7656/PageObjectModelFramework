@@ -1,33 +1,347 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[<br><img src='C:\.test-output\Tue_Dec_05_18_40_04_IST_2023.png' height='480' width='640' /><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='C:\.test-output\Tue_Dec_05_18_40_26_IST_2023.png' height='480' width='640' /><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='C:\.test-output\Tue_Dec_05_18_40_50_IST_2023.png' height='480' width='640' /><br>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-12-02T21:42:24 IST" name="Default suite" finished-at="2023-12-02T21:42:56 IST" duration-ms="31204">
+  <suite started-at="2023-12-05T18:39:10 IST" name="SanitySuite" finished-at="2023-12-05T18:40:52 IST" duration-ms="101929">
     <groups>
     </groups>
-    <test started-at="2023-12-02T21:42:24 IST" name="Default test" finished-at="2023-12-02T21:42:56 IST" duration-ms="31204">
+    <test started-at="2023-12-05T18:39:10 IST" name="Test" finished-at="2023-12-05T18:40:52 IST" duration-ms="101929">
       <class name="com.mytest.tests.LoginTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-12-02T21:42:24 IST" name="beforeSuite" finished-at="2023-12-02T21:42:24 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:39:10 IST" name="beforeSuite" finished-at="2023-12-05T18:39:10 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-12-02T21:42:24 IST" name="beforeMethod" finished-at="2023-12-02T21:42:35 IST" duration-ms="10098" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:39:11 IST" name="beforeMethod" finished-at="2023-12-05T18:39:26 IST" duration-ms="15136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginTestWithValidCredentials()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-12-02T21:42:35 IST" name="loginTestWithValidCredentials" finished-at="2023-12-02T21:42:54 IST" duration-ms="19499" status="PASS">
+        <test-method signature="loginTestWithValidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:39:26 IST" name="loginTestWithValidCredentials" data-provider="login_data_provider" finished-at="2023-12-05T18:39:46 IST" duration-ms="19902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demo.guru99.com/v2/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mngr541042]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[zygyryb]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestWithValidCredentials -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-12-02T21:42:54 IST" name="afterMethod" finished-at="2023-12-02T21:42:56 IST" duration-ms="1523" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:39:46 IST" name="afterMethod" finished-at="2023-12-05T18:39:47 IST" duration-ms="1049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.mytest.tests.LoginTest@7c7b252e]" started-at="2023-12-02T21:42:56 IST" name="afterSuite" finished-at="2023-12-02T21:42:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:39:47 IST" name="beforeMethod" finished-at="2023-12-05T18:39:51 IST" duration-ms="3834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestWithValidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:39:51 IST" name="loginTestWithValidCredentials" data-provider="login_data_provider" finished-at="2023-12-05T18:40:04 IST" duration-ms="12390" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demo.guru99.com/v2/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mngr54104]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[zygyryb]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=119.0.6045.106): User is not valid
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0298a30706d19b952f511b41be84292, findElement {using=xpath, value=//a[text()='New Customer']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57867/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0298a30706d19b952f511b41be84292]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=119.0.6045.106): User is not valid
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0298a30706d19b952f511b41be84292, findElement {using=xpath, value=//a[text()='New Customer']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57867/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0298a30706d19b952f511b41be84292
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at com.utils.CommonUtils.getElementTextContent(CommonUtils.java:103)
+at com.mytest.pages.LoginPage.loginIntoApp(LoginPage.java:31)
+at com.mytest.tests.LoginTest.loginTestWithValidCredentials(LoginTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br><img src='C:\.test-output\Tue_Dec_05_18_40_04_IST_2023.png' height='480' width='640' /><br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTestWithValidCredentials -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:40:06 IST" name="afterMethod" finished-at="2023-12-05T18:40:06 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:40:06 IST" name="beforeMethod" finished-at="2023-12-05T18:40:14 IST" duration-ms="7783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestWithValidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:40:14 IST" name="loginTestWithValidCredentials" data-provider="login_data_provider" finished-at="2023-12-05T18:40:26 IST" duration-ms="12145" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demo.guru99.com/v2/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mngr541044]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[zygyrb]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=119.0.6045.106): User is not valid
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b807d13ffdb229fdb891054d5098f09, findElement {using=xpath, value=//a[text()='New Customer']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57925}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57925/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b807d13ffdb229fdb891054d5098f09]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=119.0.6045.106): User is not valid
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b807d13ffdb229fdb891054d5098f09, findElement {using=xpath, value=//a[text()='New Customer']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57925}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57925/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b807d13ffdb229fdb891054d5098f09
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at com.utils.CommonUtils.getElementTextContent(CommonUtils.java:103)
+at com.mytest.pages.LoginPage.loginIntoApp(LoginPage.java:31)
+at com.mytest.tests.LoginTest.loginTestWithValidCredentials(LoginTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br><img src='C:\.test-output\Tue_Dec_05_18_40_26_IST_2023.png' height='480' width='640' /><br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTestWithValidCredentials -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:40:29 IST" name="afterMethod" finished-at="2023-12-05T18:40:30 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:40:30 IST" name="beforeMethod" finished-at="2023-12-05T18:40:37 IST" duration-ms="7198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestWithValidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:40:37 IST" name="loginTestWithValidCredentials" data-provider="login_data_provider" finished-at="2023-12-05T18:40:50 IST" duration-ms="13287" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demo.guru99.com/v2/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mngr54104]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[zygryb]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=119.0.6045.106): User is not valid
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [caa7212a2e664aede003c517ad24f218, findElement {using=xpath, value=//a[text()='New Customer']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58026}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58026/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: caa7212a2e664aede003c517ad24f218]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User is not valid}
+  (Session info: chrome=119.0.6045.106): User is not valid
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [caa7212a2e664aede003c517ad24f218, findElement {using=xpath, value=//a[text()='New Customer']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58026}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58026/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: caa7212a2e664aede003c517ad24f218
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at com.utils.CommonUtils.getElementTextContent(CommonUtils.java:103)
+at com.mytest.pages.LoginPage.loginIntoApp(LoginPage.java:31)
+at com.mytest.tests.LoginTest.loginTestWithValidCredentials(LoginTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br><img src='C:\.test-output\Tue_Dec_05_18_40_50_IST_2023.png' height='480' width='640' /><br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTestWithValidCredentials -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:40:52 IST" name="afterMethod" finished-at="2023-12-05T18:40:52 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.mytest.tests.LoginTest@449a4f23]" started-at="2023-12-05T18:40:52 IST" name="afterSuite" finished-at="2023-12-05T18:40:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.mytest.tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- SanitySuite -->
 </testng-results>
